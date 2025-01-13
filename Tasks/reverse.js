@@ -3,10 +3,9 @@
 
 Reverse = (data) => {
   const reversedData = {};
-  const keys = Object.keys(data); 
-  keys.forEach((key) => {
-  reversedData[data[key]] = key;
-  });
+for (const key of Object.keys(data)) {
+    reversedData[data[key]] = key;
+  }
   return reversedData;
 };
 
