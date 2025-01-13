@@ -1,7 +1,7 @@
 // Refactor following solution
 // Generate random integer value in given range
 
-Random = (min, max) => {
+Random = (min, max = min) => {
   if (max === undefined) {
     max = min;
     return Math.floor(Math.random() * (max + 1));
