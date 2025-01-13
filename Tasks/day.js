@@ -4,13 +4,9 @@
 const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseDay = (input) => {
-  let i;
-  for (i = 0; i < day.length; i++) {
-    if (s.startsWith(D[i].toLowerCase())) {
-      return i + 1;
-    }
-  }
-  return -1;
+const day = input.toLowerCase().slice(0,3);
+const index = day.indexOf(day);
+return index !== -1 ? index +1 : -1;
 };
 
 module.exports = parseDay;
